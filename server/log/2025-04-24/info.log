@@ -1,0 +1,4 @@
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-24 22:15:32.462	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-24 22:15:32.464	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/plugin.go:10	项目暂未初始化，无法安装插件，初始化后重启项目即可完成插件安装
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-24 22:15:32.464	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-24 22:15:32.464	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8888"}

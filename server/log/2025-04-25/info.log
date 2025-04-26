@@ -1,0 +1,20 @@
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:42:36.526	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:42:36.528	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/plugin.go:10	项目暂未初始化，无法安装插件，初始化后重启项目即可完成插件安装
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:42:36.529	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:42:36.531	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:53:53.383	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:53:53.383	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 09:53:53.384	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:01:45.036	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:01:45.037	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:01:45.037	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:27:15.917	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:27:15.920	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:27:15.920	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:27:36.248	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:27:36.249	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:27:36.249	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:39:57.001	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:60	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:39:57.001	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/initialize/router.go:109	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:39:57.002	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/core/server.go:38	server run success on 	{"address": ":8881"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-25 10:57:55.713	[34minfo[0m	E:/Desktop/blockchain_system/gin-vue-admin/server/api/v1/system/sys_initdb.go:57	前往初始化数据库
