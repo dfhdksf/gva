@@ -5,15 +5,21 @@ const routes = [
     path: '/',
     redirect: '/login'
   },
-  {
-    path: '/init',
-    name: 'Init',
-    component: () => import('@/view/init/index.vue')
-  },
+  // {
+  //   path: '/init',
+  //   name: 'Init',
+  //   component: () => import('@/view/init/index.vue')
+  // },
+
   {
     path: '/login',
     name: 'Login',
     component: () => import('@/view/login/index.vue')
+  },
+  {
+    path: '/register',  // 新增注册页路由
+    name: 'Register',
+    component: () => import('@/view/register/index.vue')
   },
   {
     path: '/scanUpload',

@@ -94,11 +94,10 @@
                   class="shadow shadow-active h-11 w-full"
                   type="primary"
                   size="large"
-                  @click="checkInit"
+                  @click.prevent="goToRegister()"  
                   >注册</el-button
                 >
               </el-form-item>
-              
             </el-form>
           </div>
         </div>
@@ -146,6 +145,9 @@
   defineOptions({
     name: 'Login'
   })
+
+// 在setup函数开始处添加
+console.log('登录页面初始化')
 
   const router = useRouter()
   // 验证函数
@@ -246,4 +248,28 @@
       }
     }
   }
+  // 在script部分添加跳转函数
+const goToRegister = () => {
+  console.log('正在尝试跳转到注册页面...')
+  
+  // 使用三种不同的方法尝试跳转
+  try {
+    // 方法1: 使用router.push
+    router.push({ name: 'Register' })
+    console.log('router.push 已执行')
+    
+    // 方法2: 使用window.location (如果方法1失败)
+    setTimeout(() => {
+      if (window.location.hash !== '#/register') {
+        console.log('尝试使用window.location跳转')
+        window.location.hash = '#/register'
+      }
+    }, 500)
+  } catch (error) {
+    console.error('跳转发生错误:', error)
+    // 方法3: 最后的备选方法
+    window.location.href = '/#/register'
+  }
+
+}
 </script>

@@ -26,9 +26,16 @@ export const captcha = () => {
 // @Produce  application/json
 // @Param data body {username:"string",password:"string"}
 // @Router /base/resige [post]
+// export const register = (data) => {
+//   return service({
+//     url: '/user/admin_register',
+//     method: 'post',
+//     data: data
+//   })
+// }
 export const register = (data) => {
   return service({
-    url: '/user/admin_register',
+    url: '/user/register',
     method: 'post',
     data: data
   })
@@ -177,5 +184,14 @@ export const resetPassword = (data) => {
     url: '/user/resetPassword',
     method: 'post',
     data: data
+  })
+}
+
+// 发送短信验证码
+export const sendSmsCode = (phone) => {
+  return service({
+    url: '/user/smsCode',
+    method: 'post',
+    data: { phone }
   })
 }

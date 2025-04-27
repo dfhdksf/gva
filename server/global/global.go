@@ -3,7 +3,7 @@ package global
 import (
 	"fmt"
 	"sync"
-
+	"github.com/flipped-aurora/gin-vue-admin/server/interfaces/code"
 	"github.com/gin-gonic/gin"
 	"github.com/qiniu/qmgo"
 
@@ -37,6 +37,7 @@ var (
 	GVA_ACTIVE_DBNAME       *string
 	BlackCache              local_cache.Cache
 	lock                    sync.RWMutex
+	GVA_CODE                code.CodeService
 )
 
 // GetGlobalDBByDBName 通过名称获取db list中的db

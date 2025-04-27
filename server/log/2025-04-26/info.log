@@ -6,3 +6,4 @@
 [github.com/flipped-aurora/gin-vue-admin/server]2025-04-26 15:11:09.754	[34minfo[0m	E:/Desktop/blockchain_system/gva/server/initialize/router.go:60	register swagger handler
 [github.com/flipped-aurora/gin-vue-admin/server]2025-04-26 15:11:09.764	[34minfo[0m	E:/Desktop/blockchain_system/gva/server/initialize/router.go:109	router register success
 [github.com/flipped-aurora/gin-vue-admin/server]2025-04-26 15:11:09.766	[34minfo[0m	E:/Desktop/blockchain_system/gva/server/core/server.go:38	server run success on 	{"address": ":8881"}
+[github.com/flipped-aurora/gin-vue-admin/server]2025-04-26 20:30:49.390	[34minfo[0m	E:/Desktop/blockchain_system/gva/server/api/v1/system/sys_initdb.go:57	数据库无需初始化

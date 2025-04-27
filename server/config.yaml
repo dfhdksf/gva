@@ -239,3 +239,7 @@ zap:
     show-line: true
     log-in-console: true
     retention-day: -1
+code:
+    template-id: "your-template-id"  # 添加模板ID
+    Expiration: 3600
+    ResendInterval: 3600

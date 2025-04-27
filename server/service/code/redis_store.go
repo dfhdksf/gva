@@ -15,22 +15,23 @@ var (
 	luaVerifyCode string
 )
 
-// Redis 验证码存储
-type redisCodeStore struct {
+// RedisCodeStore Redis 验证码存储
+type RedisCodeStore struct {
 	redis          redis.Cmdable
 	expiration     time.Duration
 	resendInterval time.Duration
 }
 
+// NewRedisCodeStore 创建Redis验证码存储
 func NewRedisCodeStore(redis redis.Cmdable, expiration, resendInterval int) CodeStore {
-	return &redisCodeStore{
+	return &RedisCodeStore{
 		redis:          redis,
 		expiration:     time.Duration(expiration) * time.Second,
 		resendInterval: time.Duration(resendInterval) * time.Second,
 	}
 }
 
-func (r *redisCodeStore) Store(ctx context.Context, biz string, phone string, code string) error {
+func (r *RedisCodeStore) Store(ctx context.Context, biz string, phone string, code string) error {
 	key := r.key(biz, phone)
 	res, err := r.redis.Eval(ctx, luaSetCode, []string{key}, code, int(r.expiration.Seconds()), int(r.resendInterval.Seconds())).Int()
 	if err != nil {
@@ -47,7 +48,7 @@ func (r *redisCodeStore) Store(ctx context.Context, biz string, phone string, co
 	}
 }
 
-func (r *redisCodeStore) Verify(ctx context.Context, biz string, phone string, inputCode string) (bool, error) {
+func (r *RedisCodeStore) Verify(ctx context.Context, biz string, phone string, inputCode string) (bool, error) {
 	key := r.key(biz, phone)
 	res, err := r.redis.Eval(ctx, luaVerifyCode, []string{key}, inputCode).Int()
 	if err != nil {
@@ -64,6 +65,6 @@ func (r *redisCodeStore) Verify(ctx context.Context, biz string, phone string, i
 	}
 }
 
-func (r *redisCodeStore) key(biz string, phone string) string {
+func (r *RedisCodeStore) key(biz string, phone string) string {
 	return fmt.Sprintf("phone_code:%s:%s", biz, phone)
 }

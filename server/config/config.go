@@ -33,5 +33,6 @@ type Server struct {
 	DiskList []DiskList `mapstructure:"disk-list" json:"disk-list" yaml:"disk-list"`
 
 	// 跨域配置
-	Cors CORS `mapstructure:"cors" json:"cors" yaml:"cors"`
+	Cors CORS       `mapstructure:"cors" json:"cors" yaml:"cors"`
+	Code CodeConfig `mapstructure:"code" json:"code" yaml:"code"`
 }
